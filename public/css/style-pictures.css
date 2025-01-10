@@ -1,0 +1,65 @@
+/* Gallery Section Styling */
+.gallery-section {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.gallery-section .section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Responsive Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Even spacing between grid items */
+    margin: 0 auto; /* Center-align the grid */
+}
+
+/* Gallery items stay uniform */
+.gallery-item img {
+    width: 100%; /* Ensure it matches parent width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+/* Optional: Add hover effects for interactivity */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures consistent cropping of images */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Description Styling */
+.gallery-description {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

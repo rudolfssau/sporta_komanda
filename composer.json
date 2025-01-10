@@ -1,0 +1,22 @@
+{
+    "name": "rudolfssau/typescripttest",
+    "autoload": {
+        "psr-4": {
+            "Main\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rudolfssau",
+            "email": "rudolfs@saukums.com"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*",
+        "psr/container": "^2.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}
